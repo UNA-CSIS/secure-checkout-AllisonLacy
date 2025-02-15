@@ -1,5 +1,5 @@
 <?php 
-//does user have to ask the system to display items for sale?
+
 session_start();
 include 'functions.php';
 
@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </head>
     <body>
         <form action="" method="POST">
-            <input type="submit" name="items" value="Press if you want to see them items for sale.">
+            <input type="submit" name="items" value="Press this button if you want to see the items for sale.">
         </form>
         <?php if ($displayItems): ?>
             <p>How much of each item do you want?</p>
